@@ -1,1 +1,1 @@
-# ETH-Z-rich
+# ETH-Zürich
