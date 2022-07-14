@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"time"
 )
 
 func add(x int, y int) int {
@@ -43,5 +44,10 @@ func main() {
 		fmt.Println("Error 404")
 
 	}
+
+	today := (time.Now().Weekday())
+	fmt.Println(time.Saturday)
+
+	fmt.Println(today + 1)
 
 }
