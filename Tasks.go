@@ -21,19 +21,27 @@ func main() {
 	fmt.Println(add(num1, num2))
 	fmt.Println(result)
 
-//Added If-Else
-    var ass int =5
-	if ass<=4 {
+	//Added If-Else
+	var ass int = 5
+	if ass <= 4 {
 		fmt.Println("Hi", ass)
-		
-	}else {
+
+	} else {
 		fmt.Println("Bye", ass)
-		
+
 	}
 
+	var number int = 3
+	switch number {
+	case 1:
+		fmt.Println("one")
+	case 2:
+		fmt.Println("Two")
+	case 3:
+		fmt.Println("Three")
+	default:
+		fmt.Println("Error 404")
 
-
-
-
+	}
 
 }
