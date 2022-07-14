@@ -21,4 +21,19 @@ func main() {
 	fmt.Println(add(num1, num2))
 	fmt.Println(result)
 
+//Added If-Else
+    var ass int =5
+	if ass<=4 {
+		fmt.Println("Hi", ass)
+		
+	}else {
+		fmt.Println("Bye", ass)
+		
+	}
+
+
+
+
+
+
 }
