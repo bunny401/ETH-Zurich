@@ -2,28 +2,32 @@ package main
 
 import "fmt"
 
-func main(){
-	var conferenceName= "Go Conference"
-	const conferenceTickets=50
-	var remainingTickets=50
+func main() {
+	var conferenceName = "Go Conference"
+	const conferenceTickets = 50
+	var remainingTickets = 50
 
-	fmt.Println("Welcome to", conferenceName,"booking application")
-	fmt.Println("We have a total of", conferenceTickets,"tickets and ", remainingTickets,"are still available")
+	fmt.Println("Welcome to", conferenceName, "booking application")
+	fmt.Println("We have a total of", conferenceTickets, "tickets and ", remainingTickets, "are still available")
 	fmt.Println("Get your tickets here to attend")
 
-
-
-	var userName string
+	var firstName string
+	var lastName string
+	var email string
 	var userTicket int
 
+	fmt.Println("Enter your first name")
+	fmt.Scan(&firstName)
 
-	userName="Tom"
-	userTicket=2
-	fmt.Println("user", userName,"booked", userTicket,"tickets")
+	fmt.Println("Enter your last name")
+	fmt.Scan(&lastName)
 
+	fmt.Println("Enter Email")
+	fmt.Scan(&email)
 
+	fmt.Println("Enter the number of tickets you want to buy")
+	fmt.Scan(&userTicket)
 
-
-
+	fmt.Println("Thank you", firstName, lastName, "for booking", userTicket, "tickets. You will receive the confirmation at", email)
 
 }
