@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var conferenceName = "Go Conference"
+	var conferenceName string= "Go Conference"
 	const conferenceTickets = 50
 	var remainingTickets = 50
 
@@ -28,6 +28,9 @@ func main() {
 	fmt.Println("Enter the number of tickets you want to buy")
 	fmt.Scan(&userTicket)
 
+	remainingTickets=remainingTickets - userTicket
+
 	fmt.Println("Thank you", firstName, lastName, "for booking", userTicket, "tickets. You will receive the confirmation at", email)
+	fmt.Println(remainingTickets," tickets are remaining for the ",conferenceName)
 
 }
