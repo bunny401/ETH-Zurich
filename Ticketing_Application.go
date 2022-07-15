@@ -13,6 +13,16 @@ func main(){
 
 
 
+	var userName string
+	var userTicket int
+
+
+	userName="Tom"
+	userTicket=2
+	fmt.Println("user", userName,"booked", userTicket,"tickets")
+
+
+
 
 
 
