@@ -39,15 +39,18 @@ func main() {
 		fmt.Println("Thank you", firstName, lastName, "for booking", userTicket, "tickets. You will receive the confirmation at", email)
 		fmt.Println(remainingTickets, " tickets are remaining for the ", conferenceName)
 
-		firstNames:=[]string{}
-		for _, booking :=range bookings{
+		firstNames := []string{}
+		for _, booking := range bookings {
 			var names = strings.Fields(booking)
 			firstNames = append(firstNames, names[0])
 		}
 
-		
-
 		fmt.Printf("The first names of the bookings: %v\n", firstNames)
+
+		if remainingTickets == 0 {
+			fmt.Println("Our confernce is fully booked. Come back next year")
+			break
+		}
 
 	}
 
