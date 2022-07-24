@@ -1,29 +1,33 @@
 package main
-import ("fmt")
+
+import (
+	"fmt"
+	"net"
+	"time"
+)
+
 //Created a structure
-type Packet struct{
+type Packet struct {
 	Payload byte
-	Type int
+	Type    int
 }
 
-func get(Type, ch chan Packet){
-	
- 
+//ability to write data  in the channel
+func BestEffort(Payload byte, Type int, ch chan<- Packet) {
+	for i := 1; i <= 10; i++ {
+		ch <- Packet{Payload, Type} //Sending 10 best effort packets to channel;
+
+	}
 
 }
+func Reservation(Payload byte, Type int, ch chan<- Packet) {
 
+	for i := 1; i <= 10; i++ {
+		ch <- Packet{Payload, Type} //Sending 10 Reservation Packets to channel;
 
-
-
-
-func main(){
-	//Created a channel for packets
-	packets_Channel := make(chan Packet)
-
-
-
+	}
 }
 
+func main() {
 
-
-
+}
