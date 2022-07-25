@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func Main() {
 	var conferenceName string = "Go Conference"
 	const conferenceTickets = 50
 	var remainingTickets = 50
