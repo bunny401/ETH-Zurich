@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+type packet struct {
+	payload byte
+	type1   int
+}
 
 func main() {
-	fmt.Println("YOU CAN DO IT!")
 
 }
